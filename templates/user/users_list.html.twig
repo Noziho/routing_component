@@ -1,0 +1,12 @@
+{% block body %}
+
+    {% if users is defined %}
+        {% for user in users %}
+            <p>{{ user }}</p>
+        {%  endfor %}
+    {%  endif %}
+
+    {% if deleted is defined %}
+        <p>{{ deleted }}</p>
+    {% endif %}
+{% endblock %}
